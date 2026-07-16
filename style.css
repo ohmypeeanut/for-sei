@@ -1,0 +1,293 @@
+/* ========================= */
+/* GENERAL */
+/* ========================= */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    margin:0;
+
+    background:#FFEAF4;
+
+    font-family:'Quicksand',sans-serif;
+
+    cursor:url("pride_cursor.png"),auto;
+
+    color:#5B4356;
+
+}
+
+
+/* ========================= */
+/* LANDING */
+/* ========================= */
+
+.landing{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    transition:opacity .8s ease;
+
+}
+
+h1{
+
+    font-size:35px;
+
+}
+
+.meme{
+
+    width:300px;
+
+    margin:20px 0;
+
+}
+
+button{
+
+    background:#F9C6D5;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:999px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ========================= */
+/* PAGE 2 */
+/* ========================= */
+
+.page2{
+
+    display:none;
+
+    opacity:0;
+
+    transition:opacity .8s ease;
+
+}
+
+
+/* ========================= */
+/* INTRO + CRUSH */
+/* ========================= */
+
+.section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.bigText{
+
+    font-size:70px;
+
+}
+
+.scrollHint{
+
+    margin-top:25px;
+
+    opacity:.6;
+
+}
+
+
+/* ========================= */
+/* LETTER */
+/* ========================= */
+
+.letterSection{
+
+    padding:100px 20px;
+
+}
+
+
+/* Journal container */
+
+.letterBox{
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+
+/* ========================= */
+/* JOURNAL CARD */
+/* ========================= */
+
+.journal{
+
+    background:#FFFDF8;
+
+    padding:40px;
+
+    margin:80px 0;
+
+    border-radius:18px;
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.08);
+
+    font-family:'Caveat',cursive;
+
+    font-size:30px;
+
+    line-height:1.8;
+
+    transform:translateY(80px) rotate(-1deg);
+
+    opacity:0;
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s ease;
+
+}
+
+
+/* Alternate tilt */
+
+.journal:nth-child(even){
+
+    transform:translateY(80px) rotate(1deg);
+
+}
+
+
+/* Lalabas kapag visible */
+
+.journal.show{
+
+    opacity:1;
+
+    transform:translateY(0) rotate(0deg);
+
+}
+
+
+/* ========================= */
+/* ENDING */
+/* ========================= */
+
+.ending{
+
+    text-align:center;
+
+    font-family:'Caveat',cursive;
+
+    font-size:42px;
+
+    margin:140px 0 80px;
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.8s;
+
+}
+
+.ending.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* ========================= */
+/* PHONE */
+/* ========================= */
+
+@media(max-width:768px){
+
+    h1{
+
+        font-size:28px;
+
+    }
+
+    .bigText{
+
+        font-size:48px;
+
+    }
+
+    .journal{
+
+        font-size:24px;
+
+        padding:28px;
+
+    }
+
+}
+
+#flower{
+
+    cursor:pointer;
+
+    display:inline-block;
+
+    transition:.3s;
+
+}
+
+#flower:hover{
+
+    transform:scale(1.3) rotate(10deg);
+
+}
